@@ -69,8 +69,8 @@ class TuPersonaje {
         this.numero = numero
     }
 
-    calcularAtaque = () => this.numero * 7.5
-    calcularDefensa = () => this.numero * 6.4
+    calcularAtaque = () => this.numero * 75
+    calcularDefensa = () => this.numero * 69
 
 }
 function inicializarElementos(){
@@ -100,8 +100,8 @@ function agregarPersonajeCard (){
                     <p class="card_text">Nombre: ${personaje.nombre}</p>
                     <p class="card_text">Categoría: ${personaje.categoria}</p>
                     <p class="card_text">Tipo: ${personaje.tipo}</p>
-                    <p class="card_text">Ataque: ${pers.calcularAtaque}</p>
-                    <p class="card_text">Defensa: ${pers.calcularDefensa}</p>           
+                    <p class="card_text">Ataque: ${personaje.calcularAtaque()}</p>
+                    <p class="card_text">Defensa: ${personaje.calcularDefensa()}</p>           
                 </div>
             </div>
             `
@@ -119,3 +119,4 @@ function main(){
 main()
 
 
+alert("Los datos del personajes ingresado y sus valores de ataque y defensa serán impresos en pantalla")
